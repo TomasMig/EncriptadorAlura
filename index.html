@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <div class="contenedor">
+        <img src="./imagenes/logoAlura.png" alt="" class="logo">
+      <div class="entrada">
+        <textarea id="miTextArea" placeholder="Escribe aqui ..."></textarea>
+        <button onclick="encriptar()">Encriptar</button>
+        <button onclick="desencriptar()">Desencriptar</button>
+      </div>
+      <div class="imagen">
+        <img src="./imagenes/Muñeco.png" alt="" />
+        <div class="resultado">
+            <textarea id="mostrar" placeholder="Texto procesado..."></textarea>
+            <div class="copiado" id="copiado"><span>Texto Copiado</span></div>
+            <button id="copiar">Copiar texto</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <p>Desarrollado por El Troll - Derechos reservados &copy;</p>
+      </div>
+    </footer>
+    <script src="./encriptador.js"></script>
+  </body>
+</html>

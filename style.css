@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e0e0e0;
+    width: 100vw;
+    padding: 25px;
+}
+
+.logo{
+    position: absolute;
+    left: 10px;
+    top: 50px;
+}
+
+.contenedor {
+    width: 100%;
+    border: 1px solid #0e0e0e;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.entrada{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px dashed black;
+}
+
+.entrada textarea{
+    text-align: center;
+    width: 500px;
+    height: 100px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+button{
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    color: #e0e0e0;
+    background-color: #0e0e0e;
+    margin: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    color: #0e0e0e;
+    background-color: #e0e0e0;
+}
+
+button:active{
+    background: linear-gradient(#0e0e0e,#e0e0e0);
+    transform: scale(1.1);
+    transition: all 500;
+}
+
+.copiado{
+    border: 1px solid black;
+    background: linear-gradient(#eee,#e0e0e0,#0e0e0e);
+    color: #0e0e0e;
+    padding: 5px;
+    position: absolute;
+    top: 15em;
+    display: none;
+    border-radius: 10px;
+}
+
+.copiadoDisplay{
+    display: block;
+}
+
+.imagen{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultado textarea{
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: transparent;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
